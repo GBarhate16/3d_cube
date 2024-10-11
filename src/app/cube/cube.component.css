@@ -48,9 +48,9 @@ canvas {
   width: 100%;
   padding: 10px;
   border: none;
-  border-radius: 15px; /* Rounded corners */
-  background-color: white; /* Dark background for the input box */
-  color: black; /* White text color */
+  border-radius: 15px; 
+  background-color: white;
+  color: black; 
   margin-bottom: 10px;
 }
 
