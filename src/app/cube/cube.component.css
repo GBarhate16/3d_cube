@@ -1,0 +1,87 @@
+
+.container-fluid {
+  height: 100vh; 
+  display: flex; 
+  padding: 0; 
+}
+
+/* Ensure left canvas takes full height */
+.left {
+  background-color: #f0f0f0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  width: 100%; 
+  flex: 1; 
+}
+
+/* Canvas styles */
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Button container styles */
+.button-container {
+  position: absolute; 
+  top: 10%; 
+  left: 5%; 
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+/* Button styles */
+.btn {
+  width: 100px; 
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.styled-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px; /* Rounded corners */
+  background-color: white; /* Dark background for the input box */
+  color: black; /* White text color */
+  margin-bottom: 10px;
+}
+
+.btn-red {
+  background-color: #ff4d4d;
+}
+
+.btn-green {
+  background-color: #4caf50;
+}
+
+.btn-blue {
+  background-color: #4da6ff;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .button-container {
+      top: 5%; 
+      left: 5%; 
+      gap: 5px; 
+  }
+
+  .btn {
+      width: 80px; 
+      font-size: 12px; 
+      padding: 8px; 
+  }
+}
